@@ -5,7 +5,6 @@ import avatar from "../src/images/avatar.jpg";
 
 function Nav() {
   const [show, setShow] = useState(false);
-  console.log(show);
 
   function transitionNavBar() {
     if (window.scrollY > 100) {
