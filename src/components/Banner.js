@@ -7,7 +7,7 @@ function Banner() {
   const [movie, setMovie] = useState([]);
 
   async function fetchData() {
-    const request = await axios.get(requests.fetchTrending);
+    const request = await axios.get(requests.fetchNetlixOriginals);
     setMovie(
       request.data.results[
         Math.floor(Math.random() * request.data.results.length - 1)
@@ -29,7 +29,6 @@ function Banner() {
     <header
       className="banner"
       style={{
-        // objectFit: "cover",
         backgroundSize: "cover",
         backgroundImage: `url('https://image.tmdb.org/t/p/original/${movie?.backdrop_path}')`,
         backgroundPosition: "center center",
