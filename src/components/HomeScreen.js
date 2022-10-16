@@ -1,6 +1,6 @@
-import "./HomeScreen.css";
-import Nav from "./Nav";
-import Banner from "./Banner";
+import "../css/HomeScreen.css";
+import Nav from "../components/Nav";
+import Banner from "../components/Banner";
 
 function HomeScreen() {
   return (

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import "./Nav.css";
-import logo from "../src/images/logo.png";
-import avatar from "../src/images/avatar.jpg";
+import "../css/Nav.css";
+import logo from "../images/logo.png";
+import avatar from "../images/avatar.jpg";
 
 function Nav() {
   const [show, setShow] = useState(false);
