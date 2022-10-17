@@ -11,14 +11,11 @@ import ProfileScreen from "./components/ProfileScreen";
 function App() {
   const user = useSelector((store) => store.counter.user);
 
-  console.log(user);
-
   const dispatch = useDispatch();
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {
       if (userAuth) {
-        console.log(userAuth);
         dispatch(
           login({
             uid: userAuth.uid,

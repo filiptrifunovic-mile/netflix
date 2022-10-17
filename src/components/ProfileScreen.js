@@ -4,6 +4,7 @@ import avatar from "../images/avatar.jpg";
 import { useSelector } from "react-redux";
 import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
+import PlanScreen from "./PlanScreen";
 
 function ProfileScreen() {
   const user = useSelector((store) => store.counter.user);
@@ -20,6 +21,9 @@ function ProfileScreen() {
             <h2>{user.email}</h2>
             <div className="profile-plans">
               <h3>Plans</h3>
+
+              <PlanScreen />
+
               <button
                 className="profile-sign-out"
                 onClick={() => {
